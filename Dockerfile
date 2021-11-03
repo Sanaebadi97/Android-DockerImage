@@ -1,6 +1,6 @@
-FROM ubuntu:21.04
+FROM debian:10
 
-MAINTAINER behdad222 <behdad.222@gmail.com>
+MAINTAINER sanaebadi <sanaebadiinbox@gmail.com>
 
 ARG GRADLE_VERSION=7.2
 ARG SDK_TOOLS_VERSION=7583922
