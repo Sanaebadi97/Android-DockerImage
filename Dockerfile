@@ -1,4 +1,4 @@
-FROM debian:10
+FROM debian:10.11
 
 MAINTAINER sanaebadi <sanaebadiinbox@gmail.com>
 
@@ -6,7 +6,7 @@ ARG GRADLE_VERSION=7.2
 ARG SDK_TOOLS_VERSION=7583922
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV ANDROID_HOME "/android-sdk-linux"
+ENV ANDROID_HOME "/home/sanaebadi/android/android-sdk-linux/"
 ENV PATH "$PATH:${ANDROID_HOME}/tools:/opt/gradle/gradle-${GRADLE_VERSION}/bin"
 
 RUN apt-get update \
