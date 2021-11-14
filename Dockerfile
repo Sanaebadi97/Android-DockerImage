@@ -1,4 +1,4 @@
-FROM debian:10.11
+FROM ubuntu:21.04
 
 MAINTAINER sanaebadi <sanaebadiinbox@gmail.com>
 
