@@ -19,7 +19,7 @@ RUN wget --output-document=gradle-${GRADLE_VERSION}-all.zip https://downloads.gr
         && unzip gradle-${GRADLE_VERSION}-all.zip -d /opt/gradle \
         && rm ./gradle-${GRADLE_VERSION}-all.zip \
         && mkdir -p ${ANDROID_HOME} \
-        && wget --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-${SDK_TOOLS_VERSION}_latest.zip \
+        && wget --tries=70 -c --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-${SDK_TOOLS_VERSION}_latest.zip \
         && unzip ./android-sdk.zip -d ${ANDROID_HOME} \
         && rm ./android-sdk.zip \
         && mkdir -p ~/.android \
