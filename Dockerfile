@@ -2,6 +2,7 @@ FROM ubuntu:21.04
 
 MAINTAINER sanaebadi <sanaebadiinbox@gmail.com>
 
+
 ARG GRADLE_VERSION=7.2
 ARG SDK_TOOLS_VERSION=7583922
 ARG DEBIAN_FRONTEND=noninteractive
